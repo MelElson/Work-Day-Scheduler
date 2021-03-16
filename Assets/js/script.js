@@ -1,15 +1,17 @@
 var today = moment();
-$("#currentDay").text(today.format("MMM Do, YYYY"));
+$("#currentDay").text(today.format("MMMM Do, YYYY"));
 
-var nine = $("#9");
-var ten = $("#10");
-var eleven = $("#11");
-var twelve = $("#12");
-var one = $("#1");
-var two = $("#2");
-var three = $("#3");
-var four = $("#4");
-var five = $("#5");
+
+var nine = $("#9am");
+var ten = $("#10am");
+var eleven = $("#11am");
+var twelve = $("#12pm");
+var one = $("#1pm");
+var two = $("#2pm");
+var three = $("#3pm");
+var four = $("#4pm");
+var five = $("#5pm");
+
 // look at current time
 var time = moment();
 var clearEl = $('#clear');
@@ -36,7 +38,7 @@ saveBtn.on("click", function () {
     var planner = $(this).siblings(".planner").val();
     localStorage.setItem(time, planner);
 });
-
+// change row based on time. color reps past preset or future
 function colorBlock() {
     hour = time.hours();
     $(".time-block").each(function () {
