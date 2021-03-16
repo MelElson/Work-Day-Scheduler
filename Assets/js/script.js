@@ -12,6 +12,7 @@ var four = $("#4");
 var five = $("#5");
 // look at current time
 var time = moment();
+var clearEl = $('#clear');
 
 
 
@@ -57,5 +58,8 @@ function colorBlock() {
       });
 }
 
+clearEl.on('click', function () {
+    displayEl.empty();
+  });
 
 colorBlock();
