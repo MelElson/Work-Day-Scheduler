@@ -2,26 +2,17 @@ var today = moment();
 $("#currentDay").text(today.format("MMMM Do, YYYY"));
 
 
-var nine = $("#9am");
-var ten = $("#10am");
-var eleven = $("#11am");
-var twelve = $("#12pm");
-var one = $("#1pm");
-var two = $("#2pm");
-var three = $("#3pm");
-var four = $("#4pm");
-var five = $("#5pm");
-
 // look at current time
 var time = moment();
 var clearEl = $('#clear');
+var hour = moment().hours();
 
 
 
 function startSchedule() {
 
     $(".time-block").each(function () {
-        var id = $(this).attr("id");
+        var id = $(this).attr("id");   //looks at "id" time in html
         var planner = localStorage.getItem(id);
 
         if (planner !== null) {
@@ -34,7 +25,7 @@ startSchedule();
 var saveBtn = $(".saveBtn");
 
 saveBtn.on("click", function () {
-    var time = $(this).parent().attr("id");
+    var time = $(this).parent().attr("id");  
     var planner = $(this).siblings(".planner").val();
     localStorage.setItem(time, planner);
 });
@@ -43,15 +34,19 @@ function colorBlock() {
     hour = time.hours();
     $(".time-block").each(function () {
         var thisHour = parseInt($(this).attr("id"));
+        hour = parseInt(hour);
 
         if (thisHour > hour) {
             $(this).addClass("future")
+            console.log(time)
         }
         else if (thisHour === hour) {
             $(this).addClass("present");
+            console.log(time)
         }
         else {
             $(this).addClass("past");
+            console.log(time)
         }
     })
     clear.addEventListener("click", function () {
