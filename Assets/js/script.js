@@ -8,7 +8,6 @@ var clearEl = $('#clear');
 var hour = moment().hours();
 
 
-
 function startSchedule() {
 
     $(".time-block").each(function () {
@@ -23,7 +22,7 @@ function startSchedule() {
 
 startSchedule();
 var saveBtn = $(".saveBtn");
-
+//saves user input into local storage
 saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");  
     var planner = $(this).siblings(".planner").val();
@@ -54,7 +53,7 @@ function colorBlock() {
     
       });
 }
-
+//clear button clears local storage after clicking and refreshing page
 clearEl.on('click', function () {
     displayEl.empty();
   });
