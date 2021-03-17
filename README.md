@@ -53,17 +53,12 @@ The following animation demonstrates the application functionality:
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
     
 
-### Start of Quiz
-![Changed HTML](./assets/images/StartQuiz.png)
+### Planner
+![Changed HTML](./assets/images/screenshotplanner.png)
 
-### Quiz Questions
-![Changed HTML](./assets/images/QuizQuestions.png)
+### Screenshot Event
+![Changed HTML](./assets/images/screenshotevent.png)
 
-### Score and prompt for user initials
-![Changed HTML](./assets/images/ScoreandEnterInitial.png)
+### Screenshot Code
+![Changed HTML](./assets/images/screenshotcode.png)
 
-### High Scores
-![Changed HTML](./assets/images/HighScoreList.png)
-
-### Screen shot hmtl javascript
-![Changed HTML](./assets/images/htmlcodeandJavaScript.png)
