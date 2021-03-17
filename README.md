@@ -51,7 +51,10 @@ Steps taken by user
 The following animation demonstrates the application functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/05-third-party-apis-homework-demo.gif)
-    
+
+
+### Screenshot Code
+![Changed HTML](./assets/images/screenshotcode.png)    
 
 ### Planner
 ![Changed HTML](./assets/images/screenshotplanner.png)
@@ -59,6 +62,5 @@ The following animation demonstrates the application functionality:
 ### Screenshot Event
 ![Changed HTML](./assets/images/screenshotevent.png)
 
-### Screenshot Code
-![Changed HTML](./assets/images/screenshotcode.png)
+
 
