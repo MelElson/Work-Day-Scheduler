@@ -31,8 +31,9 @@ The purpose of this task is to create a calendar application that allows a user 
 The site uses HTML, CSS code, Javascript
 
 ## Installation
-To access the website go to https://melelson.github.io/Coding-Quiz-Challenge/ 
-To clone https://github.com/MelElson/Coding-Quiz-Challenge
+To access the website go to https://melelson.github.io/Work-Day-Scheduler/
+
+To clone https://github.com/MelElson/Work-Day-Scheduler
 
 
 # Collaboration 
