@@ -27,7 +27,9 @@ saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");  
     var planner = $(this).siblings(".planner").val();
     localStorage.setItem(time, planner);
+    location.reload();
 });
+
 // change row based on time. color reps past preset or future
 function colorBlock() {
     hour = time.hours();
@@ -45,17 +47,14 @@ function colorBlock() {
         }
         else {
             $(this).addClass("past");
-            console.log(time)
+           
         }
     })
     clear.addEventListener("click", function () {
         localStorage.clear();
-    
+        location.reload();
       });
 }
-//clear button clears local storage after clicking and refreshing page
-clearEl.on('click', function () {
-    displayEl.empty();
-  });
+
 
 colorBlock();
