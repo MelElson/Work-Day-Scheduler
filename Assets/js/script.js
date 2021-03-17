@@ -27,7 +27,7 @@ saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");  
     var planner = $(this).siblings(".planner").val();
     localStorage.setItem(time, planner);
-    location.reload();
+    
 });
 
 // change row based on time. color reps past preset or future
