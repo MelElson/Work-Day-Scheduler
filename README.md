@@ -1,6 +1,4 @@
 # Work-Day-Scheduler
-# Coding-Quiz-Challenge
-
 
 ## Table of Contents
 1. [Title](#title)
