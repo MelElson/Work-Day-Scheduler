@@ -4,7 +4,7 @@ $("#currentDay").text(today.format("MMMM Do, YYYY"));
 
 // look at current time
 var time = moment();
-var clearEl = $('#clear');
+//var clearEl = $('#clear');
 var hour = moment().hours();
 
 
@@ -50,6 +50,8 @@ function colorBlock() {
            
         }
     })
+
+    
     clear.addEventListener("click", function () {
         localStorage.clear();
         location.reload();
